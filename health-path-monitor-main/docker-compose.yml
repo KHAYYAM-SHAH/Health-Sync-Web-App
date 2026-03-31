@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # Backend - Flask API with ML Models
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: health-sync-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      # Mount backend folder for live changes (optional, remove in production)
+      - ./backend:/app
+    environment:
+      - FLASK_ENV=development
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  # Frontend - React/Vite
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: health-sync-frontend
+    ports:
+      - "8080:8080"
+    volumes:
+      # Mount source for live changes (hot reload)
+      - ./src:/app/src
+      - ./public:/app/public
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+# Network (optional - default bridge is fine)
+networks:
+  default:
+    name: health-sync-network

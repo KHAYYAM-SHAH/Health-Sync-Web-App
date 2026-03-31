@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://health-sync-dev-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">265588697923</string>
+    <string name="google_api_key" translatable="false">AIzaSyBN_45CEcG0DpJTDklBonZPXV6VDvZMZhs</string>
+    <string name="google_app_id" translatable="false">1:265588697923:android:bbb56111f3e4e070d3ddf6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBN_45CEcG0DpJTDklBonZPXV6VDvZMZhs</string>
+    <string name="google_storage_bucket" translatable="false">health-sync-dev.firebasestorage.app</string>
+    <string name="project_id" translatable="false">health-sync-dev</string>
+</resources>

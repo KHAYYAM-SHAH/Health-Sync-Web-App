@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# Build outputs
+dist/
+build/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Android app (separate build)
+android-companion-app/
+
+# Documentation
+*.md
+!README.md
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Environment
+.env
+.env.local
