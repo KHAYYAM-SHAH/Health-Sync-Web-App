@@ -5,6 +5,12 @@ Complete Project Documentation & Technical README
 
 Live Site: https://health-sync-dev.web.app/
 
+Supervisor POV from Health Sync Web-dashboard
+https://youtu.be/Ci7-ivg1DUU
+
+App Setting Video: https://youtube.com/shorts/8qCD1lKaE50?feature=share
+
+
 Version: 1.0.0	Status: Production Ready	Risk Engine: ML-Powered
 
 
